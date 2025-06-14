@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!--Alterado-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Configuração</title>
+        <!--Icone na Janela-->
+        <link rel="shortcut icon" href="../img/Livro3.ico" type="image/x-icon">
+        <!--CSS BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--JS BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+          <a href="" class="header-logo">
+            <img src="../img/avatar.svg" alt="CodingNepal" />
+          </a>
+          <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">V</span>
+          </button>
+        </header>
+  
+        <nav class="sidebar-nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav-list primary-nav">
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link">
+                <span class="material-symbols-rounded">L</span>
+                <span class="nav-label">Login</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+              </ul>
+            </li>
+
+            <!--Itens-->
+            <li class="nav-item">
+              <a href="Inicio.html" class="nav-link">
+                <span class="material-symbols-rounded">I</span>
+                <span class="nav-label">Início</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Início</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="Estoque.html" class="nav-link">
+                <span class="material-symbols-rounded">E</span>
+                <span class="nav-label">Estoque</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Estoque</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a href="Vendas.html" class="nav-link">
+                <span class="material-symbols-rounded">V</span>
+                <span class="nav-label">Vendas</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Vendas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="Historico.html" class="nav-link">
+                <span class="material-symbols-rounded">H</span>
+                <span class="nav-label">Histórico</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Histórico</a></li>
+              </ul>
+            </li>
+          </ul>
+  
+  
+          <!-- Secondary Bottom Nav -->
+          <ul class="nav-list secondary-nav">
+            <li class="nav-item">
+              <a href="Configuração.html" class="nav-link">
+                <span class="material-symbols-rounded">C</span>
+                <span class="nav-label">Configuração</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Configuração</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">S</span>
+                <span class="nav-label">Sair</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+  
+
+    <div class="container fill" id="form-container">
+        <div class="justify-content-center">
+      <!--Config Inicio-->
+          <h2>Configuração:</h2>
+            <!--Esquerda-->
+            <div class="col-md">
+                <form name="frmLogin" method="get" action="../php/Verificar.php">
+                    <br><br>
+                    <div class="d-flex justify-content-center">
+                        <h2>Alterar E-Mail:</h2>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="digite o nome e-mail">
+                        <label for="email" class="form-label">Digite o seu e-mail</label>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <h2>Alterar Senha:</h2>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="digite a nova senha">
+                        <label for="senha" class="form-label">Digite a sua senha</label>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                       <h2>Alterar Telefone</h2>
+                    </div>
+                    <div class="form-floating mb-3">    
+                        <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="digite o novo telefone">
+                        <label for="Telefone" class="form-label">Digite o seu e-mail</label>
+                    </div>
+                    <br><br>
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" class="btn btransicao" value="Alterar">
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <!--Config Fim-->
+        <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-12" id="link-container">
+                    <a href="Login.html">Voltar</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Script -->
+  <script src="../css/script.js"></script>
+  </body>
+</html>

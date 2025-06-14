@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <!--Icone na Janela-->
+        <link rel="shortcut icon" href="../img/Livro3.ico" type="image/x-icon">
+        <!--CSS BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!--JS BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+        <!--CSS-->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+      <aside class="sidebar">
+        <!-- Sidebar Header -->
+        <header class="sidebar-header">
+          <a href="#" class="header-logo">
+            <img src="logo.png" alt="CodingNepal" />
+          </a>
+          <button class="sidebar-toggler">
+            <span class="material-symbols-rounded">V</span>
+          </button>
+        </header>
+  
+        <nav class="sidebar-nav">
+          <!-- Primary Top Nav -->
+          <ul class="nav-list primary-nav">
+            <li class="nav-item">
+              <a href="Login.html" class="nav-link">
+                <span class="material-symbols-rounded">L</span>
+                <span class="nav-label">Login</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Dashboard</a></li>
+              </ul>
+            </li>
+
+            <!--Itens-->
+            <li class="nav-item">
+              <a href="Inicio.html" class="nav-link">
+                <span class="material-symbols-rounded">I</span>
+                <span class="nav-label">Início</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Início</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="Estoque.html" class="nav-link">
+                <span class="material-symbols-rounded">E</span>
+                <span class="nav-label">Estoque</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Estoque</a></li>
+              </ul>
+            </li>
+  
+            <li class="nav-item">
+              <a href="Vendas.html" class="nav-link">
+                <span class="material-symbols-rounded">V</span>
+                <span class="nav-label">Vendas</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Vendas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="Historico.html" class="nav-link">
+                <span class="material-symbols-rounded">H</span>
+                <span class="nav-label">Histórico</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Histórico</a></li>
+              </ul>
+            </li>
+          </ul>
+  
+  
+          <!-- Secondary Bottom Nav -->
+          <ul class="nav-list secondary-nav">
+            <li class="nav-item">
+              <a href="Configuração.html" class="nav-link">
+                <span class="material-symbols-rounded">C</span>
+                <span class="nav-label">Configuração</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Configuração</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="material-symbols-rounded">S</span>
+                <span class="nav-label">Sair</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="nav-link dropdown-title">Sair</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+  
+      <!-- Script -->
+      <script src="../css/script.js"></script>
+          
+        <div class="container col-11 col-md-9 fill" id="form-container">
+            <div class="row gx-2 justify-content-center">
+        <!--Cadastro Inicio-->
+                <div class="col-md-8">
+                        <div class="col-12" id="link-container">
+                            <a href="CadastroLivro.html">
+                                <input type="" class="btn btn-primary" value="Cadastrar Livro">
+                            </a><br>
+                            <a href="../php/buscaFuncionarioLivro.php">
+                                <input type="" class="btn btn-primary" value="Lista de Livros">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                <!-- Cadastro Fim-->
+        <div class="col-md-12">
+            <div class="row align-items-center">
+                <div class="col-12" id="link-container">
+                    <a href="Login.html">Voltar</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
